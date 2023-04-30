@@ -1,7 +1,7 @@
 public class HashTableMain {
     public static void main(String[] args) {
         System.out.println("Welcome to Hash table problem solution.");
-        String totalWords = "To be or not to be";
+        String totalWords = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
         String[] words = totalWords.split(" ");
 
         MyHashTable hashTable = new MyHashTable();
