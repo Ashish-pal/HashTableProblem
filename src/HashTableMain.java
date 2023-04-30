@@ -5,14 +5,17 @@ public class HashTableMain {
         String[] words = totalWords.split(" ");
 
         MyHashTable hashTable = new MyHashTable();
-
         for (String word : words) {
-            hashTable.add(word);
+            if (!word.equals("avoidable")) {
+                hashTable.add(word);
+            }
         }
 
         for (String word : words) {
-            int frequency = hashTable.get(word);
-            System.out.println(word + ": " + frequency);
+            if (!word.equals("avoidable")) {
+                int frequency = hashTable.get(word);
+                System.out.println(word + ": " + frequency);
+            }
         }
     }
 }
